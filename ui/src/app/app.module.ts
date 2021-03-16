@@ -8,21 +8,13 @@ import { AppComponent } from './app.component';
 import { JobComponent } from './job/job.component';
 import { HomeComponent } from './home/home.component';
 import { JobDetailComponent } from './job-detail/job-detail.component';
+import { CustomerComponent } from './customer/customer.component';
+import { CustomerDetailsComponent } from './customer-details/customer-details.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    JobComponent,
-    HomeComponent,
-    JobDetailComponent
-  ],
-  imports: [
-    FormsModule,
-    BrowserModule,
-    HttpClientModule,
-    AppRoutingModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [AppComponent, JobComponent, HomeComponent, JobDetailComponent, CustomerComponent, CustomerDetailsComponent],
+    imports: [FormsModule, BrowserModule, HttpClientModule, AppRoutingModule],
+    providers: [],
+    bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
